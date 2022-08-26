@@ -23,7 +23,7 @@ public class Account {
 	@Column(name = "CustomerId", columnDefinition = "bigint")
 	private Long CustomerId;
 	@Column(name = "AccountNumber", columnDefinition = "bigint")
-	private int CountryCode;
+	private Long AccountNumber;
 
 	@Column(name = "OwnerBranchCode", columnDefinition = "integer")
 	private int OwnerBranchCode;
@@ -47,12 +47,12 @@ public class Account {
 		CustomerId = customerId;
 	}
 
-	public int getCountryCode() {
-		return CountryCode;
+	public Long getAccountNumber() {
+		return AccountNumber;
 	}
 
-	public void setCountryCode(int countryCode) {
-		CountryCode = countryCode;
+	public void setAccountNumber(Long accountNumber) {
+		AccountNumber = accountNumber;
 	}
 
 	public int getOwnerBranchCode() {
